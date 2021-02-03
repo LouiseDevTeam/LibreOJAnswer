@@ -10,6 +10,7 @@
 		770BFE3925CAC36900D98990 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE3825CAC36900D98990 /* main.swift */; };
 		770BFE4125CAC37C00D98990 /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE4025CAC37C00D98990 /* 1.swift */; };
 		770BFE4425CAC4F500D98990 /* 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE4325CAC4F500D98990 /* 2.swift */; };
+		770BFE4725CAC63E00D98990 /* 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE4625CAC63E00D98990 /* 3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		770BFE3825CAC36900D98990 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		770BFE4025CAC37C00D98990 /* 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
 		770BFE4325CAC4F500D98990 /* 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.swift; sourceTree = "<group>"; };
+		770BFE4625CAC63E00D98990 /* 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				770BFE3825CAC36900D98990 /* main.swift */,
 				770BFE4025CAC37C00D98990 /* 1.swift */,
 				770BFE4325CAC4F500D98990 /* 2.swift */,
+				770BFE4625CAC63E00D98990 /* 3.swift */,
 			);
 			path = LibreOJ;
 			sourceTree = "<group>";
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				770BFE4425CAC4F500D98990 /* 2.swift in Sources */,
+				770BFE4725CAC63E00D98990 /* 3.swift in Sources */,
 				770BFE3925CAC36900D98990 /* main.swift in Sources */,
 				770BFE4125CAC37C00D98990 /* 1.swift in Sources */,
 			);
