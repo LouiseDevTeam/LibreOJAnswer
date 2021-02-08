@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77063E0525D1082D00F2989E /* 10000.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77063E0425D1082D00F2989E /* 10000.swift */; };
 		770BFE3925CAC36900D98990 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE3825CAC36900D98990 /* main.swift */; };
 		770BFE4125CAC37C00D98990 /* 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE4025CAC37C00D98990 /* 1.swift */; };
 		770BFE4425CAC4F500D98990 /* 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770BFE4325CAC4F500D98990 /* 2.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		77063E0425D1082D00F2989E /* 10000.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10000.swift; sourceTree = "<group>"; };
 		770BFE3525CAC36900D98990 /* LibreOJ */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LibreOJ; sourceTree = BUILT_PRODUCTS_DIR; };
 		770BFE3825CAC36900D98990 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		770BFE4025CAC37C00D98990 /* 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				770BFE4625CAC63E00D98990 /* 3.swift */,
 				770BFE4925CACC3500D98990 /* 4.swift */,
 				779E157225CD5BFA00AB1320 /* 5.swift */,
+				77063E0425D1082D00F2989E /* 10000.swift */,
 			);
 			path = LibreOJ;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 				770BFE4725CAC63E00D98990 /* 3.swift in Sources */,
 				770BFE3925CAC36900D98990 /* main.swift in Sources */,
 				779E157325CD5BFA00AB1320 /* 5.swift in Sources */,
+				77063E0525D1082D00F2989E /* 10000.swift in Sources */,
 				770BFE4A25CACC3500D98990 /* 4.swift in Sources */,
 				770BFE4125CAC37C00D98990 /* 1.swift in Sources */,
 			);

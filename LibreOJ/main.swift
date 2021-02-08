@@ -11,4 +11,5 @@ import Foundation
 //Two.main()
 //Three.main()
 //Four.main()
-Five.main()
+//Five.main()
+_10000.main()
