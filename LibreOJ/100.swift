@@ -19,6 +19,7 @@ struct _100 {
                 vscanf("%d", vaList)
             }
         }
+        
         n = Int(delta)
         _ = withUnsafeMutablePointer(to: &delta) { ptr in
             withVaList([ptr]) { vaList in
@@ -37,11 +38,7 @@ struct _100 {
         let B = UnsafeMutablePointer<Int64>.allocate(capacity: p * m)
         let C = UnsafeMutablePointer<Int64>.allocate(capacity: n * m)
         
-        for i in 0 ..< n {
-            for j in 0 ..< m {
-                C[i * m + j] = 0
-            }
-        }
+        memset(C, 0, n * m * 8)
         
         for i in 0 ..< n {
             for j in 0 ..< p {
