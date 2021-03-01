@@ -8,63 +8,79 @@
 import Foundation
 
 struct _100 {
-    //c_ij=\sum_k=1^n a_{ik} b_{kj}
     public static func main() {
-        let MOD : CInt = CInt(1e9 + 7)
-        var n : CInt = 0
-        var p : CInt = 0
-        var m : CInt = 0
-        _ = withUnsafeMutablePointer(to: &n) { ptr in
+        let MOD = Int64(1e9 + 7)
+        var n = 0
+        var p = 0
+        var m = 0
+        var delta : CInt = 0
+        _ = withUnsafeMutablePointer(to: &delta) { ptr in
             withVaList([ptr]) { vaList in
                 vscanf("%d", vaList)
             }
         }
-        _ = withUnsafeMutablePointer(to: &p) { ptr in
+        n = Int(delta)
+        _ = withUnsafeMutablePointer(to: &delta) { ptr in
             withVaList([ptr]) { vaList in
                 vscanf("%d", vaList)
             }
         }
-        _ = withUnsafeMutablePointer(to: &m) { ptr in
+        p = Int(delta)
+        _ = withUnsafeMutablePointer(to: &delta) { ptr in
             withVaList([ptr]) { vaList in
                 vscanf("%d", vaList)
             }
         }
+        m = Int(delta)
         
-        let A = UnsafeMutablePointer<CInt>.allocate(capacity: Int(n * p))
-        let B = UnsafeMutablePointer<CInt>.allocate(capacity: Int(p * m))
-        let C = UnsafeMutablePointer<CInt>.allocate(capacity: Int(n * m))
+        let A = UnsafeMutablePointer<Int64>.allocate(capacity: n * p)
+        let B = UnsafeMutablePointer<Int64>.allocate(capacity: p * m)
+        let C = UnsafeMutablePointer<Int64>.allocate(capacity: n * m)
+        
+        for i in 0 ..< n {
+            for j in 0 ..< m {
+                C[i * m + j] = 0
+            }
+        }
         
         for i in 0 ..< n {
             for j in 0 ..< p {
-                _ = withUnsafeMutablePointer(to: &A[Int(i * p + j)]) { ptr in
+                _ = withUnsafeMutablePointer(to: &delta) { ptr in
                     withVaList([ptr]) { vaList in
                         vscanf("%d", vaList)
                     }
                 }
+                A[i * p + j] = Int64(delta)
+                A[i * p + j] += MOD
+                A[i * p + j] %= MOD
             }
         }
         
         for i in 0 ..< p {
             for j in 0 ..< m {
-                _ = withUnsafeMutablePointer(to: &B[Int(i * m + j)]) { ptr in
+                _ = withUnsafeMutablePointer(to: &delta) { ptr in
                     withVaList([ptr]) { vaList in
                         vscanf("%d", vaList)
                     }
                 }
+                B[i * m + j] = Int64(delta)
+                B[i * m + j] += MOD
+                B[i * m + j] %= MOD
             }
         }
         
         for i in 0 ..< n {
             for j in 0 ..< m {
-                for k in 0 ..< n {
-                    C[Int(i * m + j)] += A[Int(i * p + k)] * B[Int(k * m + j)] % MOD
+                for k in 0 ..< p {
+                    C[i * m + j] += A[i * p + k] * B[k * m + j] % MOD
+                    C[i * m + j] %= MOD
                 }
             }
         }
         
         for i in 0 ..< n {
             for j in 0 ..< m {
-                print(C[Int(i * m + j)], terminator: " ")
+                print(C[i * m + j], terminator: " ")
             }
             print()
         }
